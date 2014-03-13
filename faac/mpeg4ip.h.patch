@@ -1,0 +1,12 @@
+--- common/mp4v2/mpeg4ip.h	2009-01-27 00:42:35.000000000 +0200
++++ common/mp4v2/mpeg4ip.h.patched	2014-03-12 19:00:44.384564207 +0200
+@@ -123,7 +123,9 @@
+ #ifdef __cplusplus
+ extern "C" {
+ #endif
++#ifndef _STRING_H
+ char *strcasestr(const char *haystack, const char *needle);
++#endif
+ #ifdef __cplusplus
+ }
+ #endif
